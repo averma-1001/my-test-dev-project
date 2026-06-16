@@ -4,6 +4,7 @@ trigger AccountTrigger on Account (before insert) {
         if(String.isBlank(acc.Description)) {
             acc.Description = 'Created by Apex Trigger';
             System.debug('Change from test1')
+            System.debug('Change from Devtest2')
         }
     }
 }
